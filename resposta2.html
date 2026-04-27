@@ -2,36 +2,16 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Tabela Completa</title>
+<title>Tabela</title>
+
 <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
     }
 
     table {
-        width: 700px;
+        width: 800px;
         border-collapse: collapse;
-        position: relative;
-    }
-
-    td, th {
-        border: 1px solid black;
-        padding: 10px;
-    }
-
-    thead, tfoot {
-        background-color: gray;
-        color: white;
-    }
-
-    thead > tr > th {
-        position: sticky;
-        top: 0;
-        background-color: gray;
-    }
-
-    td.num {
-        text-align: right;
     }
 
     caption {
@@ -41,19 +21,37 @@
         background-color: lightgray;
     }
 
-    tbody > tr:nth-child(2n) {
-        background-color: #f2f2f2;
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
     }
 
-    .highlight {
+    thead, tfoot {
+        background-color: gray;
+        color: white;
+    }
+
+    td.num {
+        text-align: right;
+    }
+
+    .mark {
         background-color: yellow;
     }
+
+    .alto {
+        height: 80px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    tr {                
+    color: black;               
+} 
 </style>
 </head>
 
 <body>
-
-<h1>Uso de tabelas grandes</h1>
 
 <table>
     <caption>População dos Estados Brasileiros - 2024</caption>
@@ -68,104 +66,124 @@
 
     <tbody>
         <tr>
-            <td>Acre</td>
-            <td class="num">830.018</td>
-            <td><strong>Negrito</strong> e <mark>Destaçado</mark></td>
+            <td><strong>Acre</strong></td>
+            <td class="num"><span class="mark">830.018</span></td>
+            <td>`<strong>Negrito</strong>` e `<mark class="mark">Destacado</mark>`</td>
         </tr>
+
         <tr>
             <td><em>Alagoas</em></td>
             <td class="num">3.365.351</td>
-            <td><em>Itálico</em></td>
+            <td>`<em>Itálico</em>`</td>
         </tr>
+
         <tr>
-            <td><u>Amapá</u></td>
+            <td><ins>Amapá</ins></td>
             <td class="num">877.613</td>
-            <td><u>Texto sublinhado</u></td>
+            <td>`<ins>Texto sublinhado</ins>`</td>
         </tr>
+
         <tr>
             <td><del>Amazonas</del></td>
-            <td class="num"><u>4.269.995</u></td>
-            <td><del>Texto riscado</del> e <u>Texto sublinhado</u></td>
+            <td class="num"><ins>4.269.995</ins></td>
+            <td>`<del>Texto riscado</del>` e `<ins>Texto sublinhado</ins>`</td>
         </tr>
+
         <tr>
             <td>Bahia</td>
             <td class="num">14.141.626</td>
-            <td>Texto <sup>sobrescrito</sup></td>
+            <td>`Texto <sup>sobrescrito</sup>`</td>
         </tr>
+
         <tr>
             <td><abbr title="Ceará">CE</abbr></td>
             <td class="num">9.240.580</td>
-            <td><abbr title="Abreviação">Abreviação</abbr></td>
+            <td>`<abbr>Abreviação</abbr>`</td>
         </tr>
+
         <tr>
             <td><strong>Distrito Federal</strong></td>
             <td class="num">3.098.883</td>
-            <td><strong>Texto em negrito</strong></td>
+            <td>`<strong>Texto em negrito</strong>`</td>
         </tr>
+
         <tr>
             <td><q>Espírito Santo</q></td>
             <td class="num">4.108.508</td>
-            <td><q>Citação curta</q></td>
+            <td>`<q>Citação curta</q>`</td>
         </tr>
+
         <tr>
             <td><cite>Goiás</cite></td>
             <td class="num">7.206.589</td>
-            <td><cite>Citação de fonte</cite></td>
+            <td>`<cite>Citação de fonte</cite>`</td>
         </tr>
+
         <tr>
             <td><code>Maranhão</code></td>
             <td class="num">6.775.805</td>
-            <td><code>Texto monoespaçado</code></td>
+            <td>`<code>Texto monoespaçado</code>`</td>
         </tr>
+
         <tr>
             <td>Mato Grosso</td>
             <td class="num">3.658.813</td>
-            <td><pre>Texto pré-formatado</pre></td>
+            <td>
+<pre>`Texto pré-formatado`</pre>
+            </td>
         </tr>
+
         <tr>
             <td>Paraíba</td>
             <td class="num">4.059.905</td>
-            <td><small>Texto pequeno</small></td>
+            <td>`<small>Texto pequeno</small>`</td>
         </tr>
+
         <tr>
             <td>Piauí</td>
             <td class="num">3.281.480</td>
-            <td>Texto <sub>subscrito</sub></td>
+            <td>`Texto <sub>subscrito</sub>`</td>
         </tr>
+
         <tr>
-            <td>Rio de Janeiro</td>
-            <td class="num">16.054.524</td>
-            <td><blockquote>Citação em bloco</blockquote></td>
+            <td class="alto">Rio de Janeiro</td>
+            <td class="num alto">16.054.524</td>
+            <td class="alto">`<blockquote>Citação em bloco</blockquote>`</td>
         </tr>
+
         <tr>
             <td><strong>Rio Grande do Sul</strong></td>
             <td class="num">10.882.965</td>
-            <td><strong>Negrito</strong></td>
+            <td>`<strong>Negrito</strong>`</td>
         </tr>
+
         <tr>
             <td><em>Rondônia</em></td>
             <td class="num">1.616.379</td>
-            <td><em>Itálico</em></td>
+            <td>`<em>Itálico</em>`</td>
         </tr>
+
         <tr>
-            <td>Roraima</td>
+            <td><span class="mark">Roraima</span></td>
             <td class="num">636.707</td>
-            <td><mark>Texto destacado</mark></td>
+            <td>`<mark class="mark">Texto destacado</mark>`</td>
         </tr>
+
         <tr>
-            <td><abbr>TO</abbr></td>
+            <td><abbr title="Tocantins">TO</abbr></td>
             <td class="num">1.607.363</td>
-            <td><abbr>Abreviação</abbr></td>
+            <td>`<abbr>Abreviação</abbr>`</td>
         </tr>
     </tbody>
 
     <tfoot>
-        <tr>
+        <tr class="tr">
             <th>Total da população estimada:</th>
             <td class="num"><strong>Soma total</strong></td>
             <td>Realizar a soma das colunas</td>
         </tr>
     </tfoot>
+
 </table>
 
 </body>

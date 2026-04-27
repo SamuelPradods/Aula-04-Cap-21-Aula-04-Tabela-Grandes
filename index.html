@@ -71,28 +71,14 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <!-- Anatomia para tabelas grandes 
-        Table
-            Caption - Legenda da tabela
-            Thead - cabeça
-                TR, TD, TH
-            Tbody - corpo
-                TR, TD, TH
-            Tfoot - pé 
-                TR, TD, TH
-    -->
     <table>
         <caption>
             População das Unidades Federativas
         </caption>
         <thead>
             <tr>
-                <!-- Importante colocar o Escopo do título 
-                    col - colunas
-                    row - linhas 
-                -->
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 100px">População</th>
+                <th>Estado</th>
+                <th>População</th>
             </tr>
 
         </thead>
@@ -124,13 +110,10 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
+                <th>Total de Habitantes</th>
                 <td class="num"><strong>122.420.654</strong></td>
             </tr>
-
         </tfoot>
-
     </table>
-        
 </body>
 </html>
