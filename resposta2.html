@@ -12,6 +12,7 @@
     table {
         width: 800px;
         border-collapse: collapse;
+        position: relative;
     }
 
     caption {
@@ -26,23 +27,21 @@
         padding: 8px;
     }
 
-    thead, tfoot {
-        background-color: gray;
+    thead{
+        background-color: rgb(209, 209, 217);
         color: white;
     }
 
+    tfoot{
+        background-color: rgb(148, 155, 155);
+        color: white;  
+    }
     td.num {
         text-align: right;
     }
 
     .mark {
         background-color: yellow;
-    }
-
-    .alto {
-        height: 80px;
-        vertical-align: middle;
-        text-align: center;
     }
     
     tr {                
@@ -108,9 +107,9 @@
         </tr>
 
         <tr>
-            <td><q>Espírito Santo</q></td>
+            <td>"Espírito Santo"</td>
             <td class="num">4.108.508</td>
-            <td>`<q>Citação curta</q>`</td>
+            <td>`"Citação curta"`</td>
         </tr>
 
         <tr>
@@ -129,7 +128,7 @@
             <td>Mato Grosso</td>
             <td class="num">3.658.813</td>
             <td>
-<pre>`Texto pré-formatado`</pre>
+            <pre>'<pre>Texto pré-formatado</pre>'</pre>
             </td>
         </tr>
 
@@ -148,7 +147,7 @@
         <tr>
             <td class="alto">Rio de Janeiro</td>
             <td class="num alto">16.054.524</td>
-            <td class="alto">`<blockquote>Citação em bloco</blockquote>`</td>
+            <td>`<blockquote>Citação em bloco</blockquote>`</td>
         </tr>
 
         <tr>
